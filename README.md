@@ -54,25 +54,15 @@ taskflow-website/
 
 ## 🚀 Setup Instructions
 
-### Method 1: Direct Usage
 1. Extract all files to a folder
 2. Open `index.html` in any modern web browser
 3. Navigate through the website using the navigation bar
 
-### Method 2: Local Server (Recommended)
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js
-npx serve
-
-# Then open: http://localhost:8000
-```
+**No server or installation required - just open and use!**
 
 ## 💻 Browser Compatibility
 
-- ✅ Chrome (recommended)
+- ✅ Chrome
 - ✅ Firefox
 - ✅ Safari
 - ✅ Edge
