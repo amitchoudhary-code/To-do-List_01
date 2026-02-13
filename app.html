@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✓</span>
+                <span class="logo-text">TaskFlow</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="app.html" class="active">App</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    
+    <div class="app-wrapper">
+        <div class="container app-container">
+            <header>
+                <h1>My Tasks</h1>
+                <p class="subtitle">Stay organized, stay productive</p>
+            </header>
+
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="What needs to be done?" 
+                    autocomplete="off"
+                >
+                <button id="addBtn" class="btn-add">
+                    <span>Add Task</span>
+                </button>
+            </div>
+
+            <div class="stats">
+                <span class="stat-item">
+                    <strong id="totalTasks">0</strong> Total
+                </span>
+                <span class="stat-item">
+                    <strong id="completedTasks">0</strong> Completed
+                </span>
+                <span class="stat-item">
+                    <strong id="pendingTasks">0</strong> Pending
+                </span>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="taskList" class="task-list"></ul>
+
+            <div class="empty-state" id="emptyState">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                </svg>
+                <h3>No tasks yet</h3>
+                <p>Add a task to get started</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
